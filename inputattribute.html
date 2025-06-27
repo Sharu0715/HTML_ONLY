@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <haed>
+        <title>HTML InputAttribute</title>
+    </haed>
+
+    <!--Create a form-->
+    <body>
+        <h1> Student Profile</h1>
+
+        <!-- data post to the student_profile.php-->
+         <form action="student_profile.php" method="POST" style="border:2px solid black;
+         background-color: rgb(232, 232, 243);
+         ">
+         
+        
+            <!-- lable is assciatedt with input filed-->
+             <label for="name"> StudentName</label>
+            
+             <!--input creats a text box for the user, 
+             type=text specific is single line and reuried
+              means filed mandatory , palceholder is show hint of box -->
+            <input type="text" id="name"
+             required placeholder="Enter your name">
+
+             <!-- br tag means barke the line-->
+            <br><br>
+
+            <label for="prn"> PRN</label>
+            <input type="prn" id="prn"
+            required placeholder="2122000500">
+            <br><br>
+            <label for="email"> EmailID</label>
+            <input type="email" id="email"
+            required placeholder="example23@.com">
+            <br><br>
+
+              <!-- max termineted -->
+            <label for="birthdate"> Birthdate</label>
+            <input type="date" id="birthdate" 
+            max="2025-12-31"
+            required >
+            <br><br>
+             
+            <label for="mobileno"> Mobile No</label>
+            <input type="tel" id="mobileno" name="mobileno" 
+            required placeholder="Enter Your Mobile NO" pattern="[0-9]{10}" ></input>
+            <br><br>
+
+            <!--textarea creates multiplle lines-->
+              
+            <label for="bio"> Bio</label>
+            <textarea id="bio" name="bio" maxlength="500"
+            required placeholder="About yourself" ></textarea>
+            <br><br>
+            
+            <lable for ="Address">Address </lable>
+            <input type="text">
+            <br><br>
+              
+          
+
+            <!-- button submit the form-->
+            
+      <button type="submit" style="position: static;"> Submit </button>
+      <style>
+
+        button{
+            color:rgb(180, 127, 127);
+            background-color: darkslategrey;
+            
+        }
+      </style>
+
+      <!-- closed the form tag-->
+             </form>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML InputFormAttributes</title>
+    </head>
+    <body>
+        <h1> Contact us</h1>
+        <form action="submit.php " method="POST" 
+        target="_blank" enctype="multipart/form-data" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+        <br><br>
+
+        <label for="email">EmailID</label>
+        <input type="email" id="email" required>
+        <br><br>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <br><br>
+        <input type="file" id="attachment" name="attachment" accept="pdf,doc,docx">
+        <br><br>
+    
+    
+        <button type="submit">Submit</button>
+    </form>
+    </body>
+</html>
